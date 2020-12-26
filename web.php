@@ -11,7 +11,7 @@ if(!$url)
   die(header("Location: /"));
 }
 
-$headers = array('User-agent' => 'RockyProxy (https://');
+$headers = array('User-agent' => 'RockyProxy (https://github.com/RiversideRocks/RockyProxy)');
 $content = Requests::get($url, $headers);
 
 echo $content->body;
